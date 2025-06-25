@@ -16,5 +16,8 @@ class RomanNumeralsTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.converter.convert(4000)
 
+    def test_it_converts_1(self):
+        self.assertEqual(self.converter.convert(1), 'I')
+
 if __name__ == '__main__':
     unittest.main()
