@@ -64,5 +64,20 @@ class RomanNumeralsTest(unittest.TestCase):
     def test_it_converts_100(self):
         self.assertEqual(self.converter.convert(100), 'C')
 
+    def test_it_converts_400(self):
+        self.assertEqual(self.converter.convert(400), 'CD')
+
+    def test_it_converts_500(self):
+        self.assertEqual(self.converter.convert(500), 'D')
+
+    def test_it_converts_600(self):
+        self.assertEqual(self.converter.convert(600), 'DC')
+
+    def test_it_converts_900(self):
+        self.assertEqual(self.converter.convert(900), 'CM')
+
+    def test_it_converts_1000(self):
+        self.assertEqual(self.converter.convert(1000), 'M')
+
 if __name__ == '__main__':
     unittest.main()
