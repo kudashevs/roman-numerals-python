@@ -79,5 +79,8 @@ class RomanNumeralsTest(unittest.TestCase):
     def test_it_converts_1000(self):
         self.assertEqual(self.converter.convert(1000), 'M')
 
+    def test_it_converts_a_maximum_number(self):
+        self.assertEqual(self.converter.convert(3999), 'MMMCMXCIX')
+
 if __name__ == '__main__':
     unittest.main()
