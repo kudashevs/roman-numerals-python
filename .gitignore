@@ -1,0 +1,9 @@
+.idea/
+.fleet/
+.vscode/
+__pycache__/
+/build/
+venv/
+*.py[cod]
+*.so
+*.spec
