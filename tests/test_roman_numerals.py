@@ -12,5 +12,9 @@ class RomanNumeralsTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.converter.convert(-1)
 
+    def test_it_throws_exception_when_greater_than_3999(self):
+        with self.assertRaises(ValueError):
+            self.converter.convert(4000)
+
 if __name__ == '__main__':
     unittest.main()
