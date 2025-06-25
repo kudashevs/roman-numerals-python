@@ -6,6 +6,9 @@ class RomanNumerals:
         if amount <= 0 or amount >= 4000:
             raise ValueError(f'{amount} cannot be converted a roman number')
 
+        if amount == 10:
+            return 'X'
+
         if amount == 5:
             return 'V'
 

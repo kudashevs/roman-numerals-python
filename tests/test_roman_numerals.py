@@ -31,5 +31,8 @@ class RomanNumeralsTest(unittest.TestCase):
     def test_it_converts_5(self):
         self.assertEqual(self.converter.convert(5), 'V')
 
+    def test_it_converts_10(self):
+        self.assertEqual(self.converter.convert(10), 'X')
+
 if __name__ == '__main__':
     unittest.main()
