@@ -13,4 +13,4 @@ class RomanNumerals:
         if amount <= 0:
             return ''
 
-        return 'IV' if (amount == 4) else 'I' + self._convert_to_roman(amount - 1)
+        return 'V' if (amount == 5) else 'IV' if (amount == 4) else 'I' + self._convert_to_roman(amount - 1)
