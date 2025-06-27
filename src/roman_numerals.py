@@ -1,4 +1,10 @@
 class RomanNumerals:
+    _GLYPHS = [
+        (5, 'V'),
+        (4, 'IV'),
+        (1, 'I'),
+    ]
+
     def __init__(self):
         pass
 
@@ -13,4 +19,6 @@ class RomanNumerals:
         if amount <= 0:
             return ''
 
-        return 'V' if (amount == 5) else 'IV' if (amount == 4) else 'I' + self._convert_to_roman(amount - 1)
+        for arabic, roman in self._GLYPHS:
+            if amount >= arabic:
+               return roman + self._convert_to_roman(amount - arabic)
