@@ -27,7 +27,7 @@ string representation. The valid numbers are from 1 to 3999 inclusive, otherwise
 Open a terminal. Clone the repository. Change your directory to a cloned one and execute:
 ```
 python -m venv venv
-venv/bin/activate
+venv/Scripts/activate
 pip install -r requirements.txt
 python -m unittest
 ```
